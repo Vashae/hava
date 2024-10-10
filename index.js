@@ -9,8 +9,8 @@ async function main() {
  userListEl.innerHTML = usersData.map((user) => userHTML(user)).join("");
     }
    main()
-   function showUserPosts (id) {
-    localStorage.setItem("id", id);
+   function showUserPosts (userid) {
+    localStorage.setItem("id", userid);
    window.location.href = `${window.location.origin}/user.html`
    
    }
